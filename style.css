@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url("/font/Outfit-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: "Outfit-Regular";
+color: #6D7243;
+}
+
+header {
+    background-color: #C7E1AE;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #6D7243;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.4s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.7s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.oferta {
+    margin-top: 120px;
+    width: 60%;
+}
+
+.iconos {
+    width: 87px;
+    height: 11.35px;
+}
+
+.titulo {
+    font-size: 42px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.unico {
+    font-size: 35px;
+    text-decoration: none;
+    color: #000;
+}
+
+.especiales {
+    font-size: 35px;
+}
+
+.Ofertas {
+    font-size: 30.77px;
+}
+
+.Combos {
+    font-size: 30.77px;
+}
+
+.imagen {
+    width: 57px;
+    height: 57px;
+}
+
+.footer {
+    background: #282D23;
+    width: 1408px;
+    height: 218px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.div2 {
+    color: #797676;
+    margin-bottom: 100px;
+}
+
